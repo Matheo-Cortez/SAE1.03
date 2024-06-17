@@ -1,0 +1,43 @@
+Répartition des tâches pour la première partie de la SAE1.03 : 
+
+- Doc_technique.html : 
+    ~ Baptiste : 100%
+    ~ Mathéo : 0%
+    ~ Deonna : 0%
+    ~ Juline : 0%
+
+- Doc_utilisateur.html : 
+    ~ Baptiste : 80%
+    ~ Mathéo : 10%
+    ~ Deonna : 0%
+    ~ Juline : 10%
+
+- Doc_utilisateur.md : 
+    ~ Baptiste : 90%
+    ~ Mathéo : 0%
+    ~ Deonna : 10%
+    ~ Juline : 0%
+
+- Code_source1 : 
+    ~ Baptiste : 0%
+    ~ Mathéo : 0%
+    ~ Deonna : 0%
+    ~ Juline : 100%
+
+- Code_source2 : 
+    ~ Baptiste : 0%
+    ~ Mathéo : 0%
+    ~ Deonna : 100%
+    ~ Juline : 0%
+
+- Code_source3 : 
+    ~ Baptiste : 0%
+    ~ Mathéo : 100%
+    ~ Deonna : 0%
+    ~ Juline : 0%
+
+- Répartition globale : 
+    ~ Baptiste : 40%
+    ~ Mathéo : 20%
+    ~ Deonna : 20%
+    ~ Juline : 20%

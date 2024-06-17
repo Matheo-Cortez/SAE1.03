@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+      <meta charset="utf-8" />
+      <title>doc_tech-5.1.1</title>
+  </head>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: black;
+            color: #F2F2F2;
+        }
+        h1, h2, p {
+            margin-bottom: 10px;
+        }
+        h1, h1+p{
+          text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentation Technique</h1><h2>Nom du Client:</h2><p>Les Génies du Ponant</p><h2>Nom du Produit:</h2><p>Machine à courber les bananes</p><h2>Version du Produit:</h2><p>5.1.1</p><h2>Date de Génération:</h2><p>19-01-2024 15:06:27</p></body>
+
+    
+      <hr>
+      <hr>
+        <h1><ins>Description du src1.c</ins></h1>
+      <p>Gestion des arguments de lancement, démarrage du jeu
+de lancement, démarrage du jeu
+</p>
+      <hr>
+
+      <!--- Defines --->
+
+      <h2>Defines</h2>
+            <dl>
+          <dt>TAILLE 10 </dt>
+          <dd> sert a définir la taille du tableau </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>MAX_BATEAU 20 </dt>
+          <dd> brief sert a définir la taille du tableau </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Structures -------------------->
+      <h2>Structures</h2>
+            <dl>
+          <dt> tCase1;</dt>
+          <dd>
+              <dl>
+                  <dt> contient les données d'une case vide </dt>
+                  <ul>
+                                            <li>int valeur; /** Lorem ipsum1*/
+</li>
+                                            <li>int colonne; /** Lorem ipsum2*/
+</li>
+                                            <li>int ligne; /** Lorem ipsum3*/
+</li>
+                                        </ul>
+              </dl>
+          </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt> tCase2;</dt>
+          <dd>
+              <dl>
+                  <dt> contient les données d'une case pleine </dt>
+                  <ul>
+                                            <li>int valeur; /** Lorem ipsum1*/
+</li>
+                                            <li>int colonne; /** Lorem ipsum2*/
+</li>
+                                            <li>int ligne; /** Lorem ipsum3*/
+</li>
+                                        </ul>
+              </dl>
+          </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Variables Globales --->
+      <h2>Variables Globales</h2>
+            <dl>
+          <dt>static char *nom_prog;</dt>
+          <dd> Nom de l'exécutable </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>int ligne = 10 ;</dt>
+          <dd> Nombre de ligne </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>int colonne = 10 ;</dt>
+          <dd> Nombre de colonne </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Fonctions et Procédure --->
+      <h2>Fonctions et Procédure</h2>
+            <dl>
+          <dt>void helpHandler(void)</dt>
+          <dd>
+              <dl>
+                  <dt>Afficher l'aide</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>g Nom de l'exécutable du programme
+</li>
+                                                      </ul>
+                                                                          </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void errHandler(char *msg)</dt>
+          <dd>
+              <dl>
+                  <dt>Afficher une erreur de paramètre</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>g Nom de l'exécutable du programme
+</li>
+                                                          <li>sg Message d'erreur
+</li>
+                                                      </ul>
+                                                                          </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void lpHandler(int l)</dt>
+          <dd>
+              <dl>
+                  <dt>Modifier l'option du jeu : longueur du plateau</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>l Longueur
+</li>
+                                                      </ul>
+                                                                          </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void hpHandler(int h)</dt>
+          <dd>
+              <dl>
+                  <dt>Modifier l'option du jeu : hauteur du plateau</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>h Hauteur
+</li>
+                                                      </ul>
+                                                                          </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void tfHandler(int n)</dt>
+          <dd>
+              <dl>
+                  <dt>Modifier l'option du jeu : taille de la flotte</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>n Nombre de bateaux
+</li>
+                                                      </ul>
+                                                                          </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void parseArgs(int argc, char *argv[])</dt>
+          <dd>
+              <dl>
+                  <dt>Parser les arguments de lancement</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>gc Nombre d'arguments précisés
+</li>
+                                                          <li>gv Pointeurs vers les arguments
+</li>
+                                                      </ul>
+                                                                          </dl>
+                  </dd>
+                  <dt>Il est aussi possible de parser les arguments avec http://manpagesfr.free.fr/man/man3/getopt.3.html</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>int main(int argc, char *argv[])</dt>
+          <dd>
+              <dl>
+                  <dt>programme principal</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>gc Nombre d'arguments précisés
+</li>
+                                                          <li>gv Pointeurs vers les arguments
+</li>
+                                                      </ul>
+                                                                          </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+      
+      </body>
+      </html>
+    
+      <hr>
+      <hr>
+        <h1><ins>Description du src2.c</ins></h1>
+      <p>Ce programme propose plusieurs procédures et fonctions permettant 
+de charger et afficher une grille de sudoku ainsi que d'y jouer 
+jusqu'à ce que la grille soit pleine.
+</p>
+      <hr>
+
+      <!--- Defines --->
+
+      <h2>Defines</h2>
+            <dl>
+          <dt>N 3 </dt>
+          <dd> constante pour définir le nombre de case par bloc sur l'axe x et y </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>TAILLE (N*N) </dt>
+          <dd> constante pour définir la dimension d'un bloc en fonction de N*N </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Structures -------------------->
+      <h2>Structures</h2>
+            <dl>
+          <dt> tCase1;</dt>
+          <dd>
+              <dl>
+                  <dt> type structure des données sur la case d'une grille de SUDOKU </dt>
+                  <ul>
+                                            <li>int valeur; /** Lorem ipsum1*/
+</li>
+                                            <li>int candidats[TAILLE]; /** Lorem ipsum2*/
+</li>
+                                            <li>int nbCandidats; /** Lorem ipsum3*/
+</li>
+                                        </ul>
+              </dl>
+          </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt> tCase2;</dt>
+          <dd>
+              <dl>
+                  <dt> type structure des données sur la case d'une grille de SUDOKU </dt>
+                  <ul>
+                                            <li>int valeur; /** Lorem ipsum1*/
+</li>
+                                            <li>bool candidats[TAILLE+1]; /** Lorem ipsum2*/
+</li>
+                                            <li>int nbCandidats; /** Lorem ipsum3*/
+</li>
+                                        </ul>
+              </dl>
+          </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Variables Globales --->
+      <h2>Variables Globales</h2>
+            <dl>
+          <dt>int erreur = 0;</dt>
+          <dd> variable servant à stocker le nombre d'erreur du joueur </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>int parties = 0;</dt>
+          <dd> variable servant à stocker le nombre de partie du joueur </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Fonctions et Procédure --->
+      <h2>Fonctions et Procédure</h2>
+            <dl>
+          <dt>int main()</dt>
+          <dd>
+              <dl>
+                  <dt>Programme principal.</dt>
+                  <dd>
+                      <dl>                                                    <dt>Renvoie :</dt>
+                          <dd>Code de sortie du programme ( 0 : sortie normale).</dd>
+                                                </dl>
+                  </dd>
+                  <dt>Le programme principal permet d'afficher une grille de sudoku et d'y jouer jusqu'à ce que 
+grille soit pleine, en demandant de saisir la ligne, la colonne et la valeur à placer</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void chargerGrille(tGrille g)</dt>
+          <dd>
+              <dl>
+                  <dt>procédure qui charge une grille sous format fichier .sud .</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>g paramètre d'entrée/sortie qui représente le tableau qui contiendra la grille à charger.
+</li>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>Code de sortie du programme ( 0 : sortie normale).</dd>
+                                                </dl>
+                  </dd>
+                  <dt>Demande à l'utilisateur de saisir le d'un nom de fichier .sud, 
+Les valeurs présentes dans le fichier .sud seront assignées au tableau tGrille g.</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void ligneGrille()</dt>
+          <dd>
+              <dl>
+                  <dt>Procédure qui affiche une ligne horizontale formée avec des "+" et des "-"</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>Code de sortie du programme ( 0 : sortie normale).</dd>
+                                                </dl>
+                  </dd>
+                  <dt>Affiche N*N tirets précédés d'un "+", puis un "+" de fin de ligne</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void afficherGrille(tGrille grille1)</dt>
+          <dd>
+              <dl>
+                  <dt>procédure qui produit l'affichage d'une grille de sudoku</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>grille1 paramètre d'entrée/sortie qui représente le tableau contenant les éléments de la grille chargée 
+</li>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>Code de sortie du programme ( 0 : sortie normale).</dd>
+                                                </dl>
+                  </dd>
+                  <dt>Affiche les numéros de colonne et de ligne, les lignes de séparation verticales et horizontales 
+grille de Sudoku pour distinguer les différents blocs, et remplace les valeurs nulles de 
+grille par un point à l'affichage.</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void saisir(int *val)</dt>
+          <dd>
+              <dl>
+                  <dt>procédure qui demande à l'utilisateur de saisir une valeur qui sera affectée à une variable.</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>val paramètre d'entrée/sortie représentant la variable qui stock la saisie de l'utilisateur qui sera retournée ou non en fonction 
+</li>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>Code de sortie du programme ( 0 : sortie normale).</dd>
+                                                </dl>
+                  </dd>
+                  <dt>s vérifications à passer.</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>bool possible(tGrille grille1, int lig, int col, int val)</dt>
+          <dd>
+              <dl>
+                  <dt>procédure qui vérifie si l'utilisateur peut placer une valeur à tel emplacement ou non selon les règles du SUDOKU</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>grille1 paramètre d'entrée représentant la variable qui contient la grille de sudoku utilisée
+</li>
+                                                          <li>lig paramètre d'entrée représentant la variable du numéro de la ligne de la grille
+</li>
+                                                          <li>col paramètre d'entrée représentant la variable du  numéro de la colonne de la grille
+</li>
+                                                          <li>val paramètre d'entrée représentant la variable de la valeur saisie à placer dans une case de la grille
+</li>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>vrai quand la valeur n'est présente ni dans le bloc, la ligne ou la colonne, false sinon</dd>
+                                                </dl>
+                  </dd>
+                  <dt>val = x; 
+fonction test si la valeur saisie est présente quelque part dans la ligne, dans la colonne et/ou dans le bloc</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>bool estPleine(tGrille grille1)</dt>
+          <dd>
+              <dl>
+                  <dt>procédure qui vérifie si la grille est pleine</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>grille1 paramètre d'entrée représentant la variable qui contient la grille de sudoku utilisée
+</li>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>vrai quand la grille ne contient plus aucune valeur nulle, false sinon</dd>
+                                                </dl>
+                  </dd>
+                  <dt>fonction vérifie si la grille est pleine ou non en fonction de la présence de valeurs nulles</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+      
+      </body>
+      </html>
+    
+      <hr>
+      <hr>
+        <h1><ins>Description du src3.c</ins></h1>
+      <p>Programme de jeu de Morpion (Tic Tac Toe) joueur contre IA dans une grille 3x3.
+</p>
+      <hr>
+
+      <!--- Defines --->
+
+      <h2>Defines</h2>
+            <dl>
+          <dt>MAX_PLAYERS 4 </dt>
+          <dd> Définit le nombre maximum de joueurs autorisés dans le jeu. </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>VIDE 0 </dt>
+          <dd> Définit les cases vides à 0 </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Structures -------------------->
+      <h2>Structures</h2>
+            <dl>
+          <dt> GameSettings;</dt>
+          <dd>
+              <dl>
+                  <dt> Structure crée uniquement pour le doxygen </dt>
+                  <ul>
+                                            <li>int difficulty; /** Niveau de difficulté du jeu (facile, moyen, difficile). */
+</li>
+                                            <li>int maxPlayers; /** Nombre maximum de joueurs autorisés dans le jeu. */
+</li>
+                                            <li>char gameName[100]; /** Nom du jeu. */
+</li>
+                                        </ul>
+              </dl>
+          </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt> Player;</dt>
+          <dd>
+              <dl>
+                  <dt> Représente un joueur dans le jeu. </dt>
+                  <ul>
+                                            <li>int playerId; /** Identifiant pour discerner le joueur unique à chaque joueur. */
+</li>
+                                            <li>char playerName[50]; /** Nom du joueur. */
+</li>
+                                        </ul>
+              </dl>
+          </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Variables Globales --->
+      <h2>Variables Globales</h2>
+            <dl>
+          <dt>char* prefix = "[Morpion] ";</dt>
+          <dd> Nom du jeu </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>char* symbols[] = {"X", "O"};</dt>
+          <dd> Définition des symboles de jeux pour différencier les joueurs</dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>char* positions[9];</dt>
+          <dd> Ensemble des cases présentes dans la grille (3x3) </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>int currentPlayer = 1;</dt>
+          <dd> Joueur dont c'est le tour de joueur  </dd>
+      </dl>
+
+      <br>
+            <dl>
+          <dt>int turn = 1;</dt>
+          <dd> Nombre du tour </dd>
+      </dl>
+
+      <br>
+      
+      <!--- Fonctions et Procédure --->
+      <h2>Fonctions et Procédure</h2>
+            <dl>
+          <dt>void separator() </dt>
+          <dd>
+              <dl>
+                  <dt>Affiche une séparation visuelle dans la console.</dt>
+                  <dd>
+                      <dl>                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void clearAll() </dt>
+          <dd>
+              <dl>
+                  <dt>Efface tout le contenu</dt>
+                  <dd>
+                      <dl>                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void init() </dt>
+          <dd>
+              <dl>
+                  <dt>Initialise l'affichage du jeu par défaut pour commencer le jeu.</dt>
+                  <dd>
+                      <dl>                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void draw() </dt>
+          <dd>
+              <dl>
+                  <dt>Affiche la grille de jeu</dt>
+                  <dd>
+                      <dl>                                                </dl>
+                  </dd>
+                  <dt>Utilise les symboles pour représenter les cases occupées par chaque joueur.</dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>int aiGetCase() </dt>
+          <dd>
+              <dl>
+                  <dt>Sélectionne la case pour l'IA</dt>
+                  <dd>
+                      <dl>                                                    <dt>Renvoie :</dt>
+                          <dd>Le numéro de la case choisie par l'IA.</dd>
+                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>int checkWinner() </dt>
+          <dd>
+              <dl>
+                  <dt>Vérifie s'il y a un gagnant ou si la partie est nulle.</dt>
+                  <dd>
+                      <dl>                                                    <dt>Renvoie :</dt>
+                          <dd>0 si aucun gagnant, 1 si le joueur 1 gagne, 2 si le joueur 2 (IA) gagne, 100 si match nul.</dd>
+                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>int requestCaseNum() </dt>
+          <dd>
+              <dl>
+                  <dt>Demande au joueur de choisir une case et vérifie la validité de la saisie.</dt>
+                  <dd>
+                      <dl>                                                    <dt>Renvoie :</dt>
+                          <dd>input Le numéro de la case choisi par le joueur</dd>
+                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void applySelectionToCase(int caseId) </dt>
+          <dd>
+              <dl>
+                  <dt>Demande à l'utilisateur ou à l'IA de choisir une case et applique la sélection.</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>caseId L'identifiant de la case choisie.
+</li>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>input Le numéro de la case choisi par le joueur</dd>
+                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>void doTurn(int help, int isIa) </dt>
+          <dd>
+              <dl>
+                  <dt>Réalise un tour de jeu pour que ça gère les actions du joueur et de l'IA.</dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                          <li>help Indique si le message d'aide doit être affiché.
+</li>
+                                                          <li>isIa Indique si l'IA joue.
+</li>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>input Le numéro de la case choisi par le joueur</dd>
+                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+            <dl>
+          <dt>int main()</dt>
+          <dd>
+              <dl>
+                  <dt></dt>
+                  <dd>
+                      <dl>                          <dt>Paramètre :</dt>  
+                          <ul>
+                                                      </ul>
+                                                                              <dt>Renvoie :</dt>
+                          <dd>La valeur de retour du programme.</dd>
+                                                </dl>
+                  </dd>
+                  <dt></dt>
+              </dl>    
+          </dd>
+      </dl> 
+      <br>
+      
+      </body>
+      </html>

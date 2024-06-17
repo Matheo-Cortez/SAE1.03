@@ -1,0 +1,51 @@
+********REPARTITION GLOBALE*********
+
+- Baptiste : 25%
+- Deonna : 25%
+- Mathéo : 25%
+- Juline : 25%
+
+
+********REPARTITION DETAILLEE********
+
+** DOC_TECHNIQUE.html 
+- Baptiste : 100%
+
+** DOC_UTILISATEUR.html
+- Baptiste : 85%
+- Deonna : 15%
+
+** DOC_UTILISATEUR.md
+- Baptiste : 85%
+- Deonna : 15%
+
+** gendoc-tech.php
+- Baptiste : 50%
+- Mathéo : 50%
+
+** cover.php
+- Mathéo : 50%
+
+** gendoc-user.php
+- Deonna : 85%
+- Juline : 15%
+
+** style.css
+- Deonna : 100%
+
+** sae103.bash
+- Juline : 100%
+
+** src1.c
+- Juline : 90%
+- Baptiste : 10%
+
+** src2.c
+- Deonna : 90%
+- Baptiste : 10%
+
+** src3.c
+- Mathéo : 90%
+- Baptiste : 10%
+
+
